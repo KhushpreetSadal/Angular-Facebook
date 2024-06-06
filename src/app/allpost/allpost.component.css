@@ -1,0 +1,80 @@
+.section{
+    width: 100%;  
+    height: fit-content;
+    display: flex;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+   
+}
+h1{
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 1rem;
+}
+h2{
+    text-align: center;
+    margin: 1rem;
+    color: #0866ff;
+}
+.section .post{
+    width: 25%;
+    height: fit-content;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: white;
+
+}
+.section .post .names{
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+}
+.section .post .names img{
+    border-radius: 50%;
+    width: 3rem;
+    margin: 0rem 1rem;
+
+}
+.section .images h3{
+    margin: .5rem;
+    background-color: white;
+
+}
+.section .images .likes{
+    background-color: white;
+    border: none;
+    margin: 1rem;
+    margin-top: 0px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: fit-content;
+
+}
+.section .images .likes img{
+width: 2.5rem;
+margin: .5rem;
+}
+
+.section .images img{
+    width: 100%;
+
+}
+.section .post #btn{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem .85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .5rem;
+    text-decoration: none;
+}
+.section video{
+width: 100%;
+}

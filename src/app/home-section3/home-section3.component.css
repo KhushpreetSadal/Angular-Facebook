@@ -1,0 +1,43 @@
+
+
+.section3{
+    width: 24%;          
+    background-color: white;
+    
+    height: fit-content;
+    border-radius: 1rem;
+}
+
+.section3 .friends .names{
+    display: flex;
+    align-items: center;
+    padding: 1rem 0rem;
+    width: max-content;
+
+}
+
+.section3 .friends .names img{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.section3 .friends .names h3{
+    margin-left: .5rem;
+}
+
+.section3 .friends .names img{
+  cursor: pointer;
+}
+
+.section3 .friends .btns{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    width: max-content;
+    border-radius: 1rem;
+    padding: .5rem .85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0rem 0rem 1rem 0rem;
+    text-decoration: none;
+}

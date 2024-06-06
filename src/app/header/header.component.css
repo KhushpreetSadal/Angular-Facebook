@@ -1,0 +1,59 @@
+header nav{
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header nav .logo{
+    display: flex;
+    align-items: center;
+}
+header nav .logo img {
+    width: 3rem;
+}
+header nav ul{
+
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 5rem;
+}
+header nav ul li img{
+   margin: 1rem 2rem; 
+   height: 1.75rem;
+}
+header nav .logo form{
+    margin-left: 1rem;
+}
+header nav .logo form input{
+    border: 1px solid gainsboro;
+    width: 8rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem .85rem;
+}
+header nav .logo form button{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem .85rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+header nav #user {
+
+    display: flex;
+    align-items: center;
+}
+header nav #user img{
+    height: 3.5rem;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+header nav #user {
+    margin-right: 1rem;
+}

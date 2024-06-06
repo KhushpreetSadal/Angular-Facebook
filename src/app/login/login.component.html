@@ -1,0 +1,45 @@
+<div class="container" *ngIf="!active">
+    <div id="left">
+        <div id="text">
+        <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+    </div>
+    <div id="right">
+    <form class="form" #form="ngForm" (ngSubmit)="signup(form.value)">
+        <h2 *ngIf="error" id="error">Please enter correct values</h2>
+        <input class="input" type="text" name="Name" id="Name" ngModel placeholder="Name">
+        <input class="input" type="text" name="Image" id="Image" ngModel placeholder="Image Url">
+        <input class="input" type="text" name="Email" id="Email" ngModel placeholder="Email">
+        <input class="input" type="password" name="Password" id="Password" ngModel placeholder="Password">
+        <button id="btn">sign in</button>
+    </form>
+    <div class="btn">
+        <hr id="hr">
+        <button class="newacc" (click)="change()">Already have an accout</button>
+    </div>
+    </div>
+</div>
+
+<div class="container" *ngIf="active">
+    <div id="left">
+        <div id="text">
+        <img class="fb_logo _8ilh img" src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg" alt="Facebook">
+        <h2>Facebook helps you connect and share with the people in your life.</h2>
+        </div>
+    </div>
+    <div id="right">
+    <form class="form" #form="ngForm" (ngSubmit)="login(form.value)">
+        <h2 *ngIf="error" id="error">Please enter correct values</h2>
+        <h2 *ngIf="error1" id="error">No match found</h2>
+        <input class="input" type="text" name="Email" id="Email" ngModel placeholder="Email">
+        <input class="input" type="password" name="Password" id="Password" ngModel placeholder="Password">
+        <button id="btn">Log in</button>
+    </form>
+    <div class="btn">
+        <hr id="hr">
+        <button class="newacc" (click)="change()">Creat new account</button>
+    </div>
+    </div>
+</div>
+

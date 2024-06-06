@@ -1,0 +1,24 @@
+<div class="postpage" *ngIf="show">
+    <div class="text">
+    <h1>Creat New Post</h1>
+    </div>
+
+    <form class="form" #form="ngForm" (ngSubmit)="creatNewPost(form.value)">
+        <input class="input" type="text" name="title" id="title" placeholder="Title" ngModel>
+        <input class="input" type="text" name="image" id="image" placeholder="Image Url" ngModel>
+        <button id="btn">Creat</button>
+    </form>
+</div>
+
+
+<div class="postpage" *ngIf="!show">
+    <div class="text">
+    <h1>Creat New Post</h1>
+    </div>
+
+    <form class="form" #form="ngForm" (ngSubmit)="creatNewVideo(form.value)">
+        <input class="input" type="text" name="title" id="title" placeholder="Title" ngModel>
+        <input class="input" type="text" name="video" id="video" placeholder="Video Url" ngModel>
+        <button id="btn">Creat</button>
+    </form>
+</div>

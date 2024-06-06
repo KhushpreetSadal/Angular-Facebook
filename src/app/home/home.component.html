@@ -1,0 +1,27 @@
+
+<div class="home">
+
+    <div class="section">
+    <app-home-section1></app-home-section1>
+    </div>
+
+    <div class="section2">
+        <div class="post" *ngFor="let post of allposts">
+        <div class="names" >
+            <img src="{{post.userimage}}" alt="">
+            <h3>{{post.username | titlecase}}</h3>
+        </div>
+        <div class="images">
+            <h3>{{post.title}}</h3>
+            <img src="{{post.image}}" alt="">  
+            <button (click)="likeAndDislike(post.id,post)" class="likes"><img src="../../assets/images/facebook-like-logo-png-transparent.png" alt="">{{post.likes}}</button>
+          
+        </div>
+        </div>
+    </div>
+
+<div class="bottom">
+    <app-home-section3></app-home-section3>
+</div>
+    
+</div>

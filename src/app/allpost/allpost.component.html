@@ -1,0 +1,33 @@
+<h1>All Posts</h1>
+<h2 *ngIf="update">Post Updated</h2>
+<div class="section" *ngIf=" show">
+<div class="post" *ngFor="let post of allposts">
+  <div class="names">
+    <img src="{{ post.userimage }}" alt="" />
+    <h3>{{ post.username | titlecase }}</h3>
+  </div>
+  <div class="images">
+    <h3>{{ post.title | titlecase}}</h3>
+    <img src="{{ post.image }}" alt="" />
+    <button id="btn" (click)="edit(post.id)">Edit</button>
+    <button id="btn" (click)="del(post.id)">Delete</button>
+  </div>
+</div>
+</div>
+
+
+
+<div class="section" *ngIf="!show">
+  <div class="post" *ngFor="let video of allvideos">
+    <div class="names">
+      <img src="{{ video.userimage }}" alt="" />
+      <h3>{{ video.username | titlecase }}</h3>
+    </div>
+    <div class="images">
+      <h3>{{ video.title | titlecase}}</h3>
+      <video controls src="{{video.video}}"></video>
+      <button id="btn" (click)="editVideo(video.id)">Edit</button>
+      <button id="btn" (click)="delvideo(video.id)">Delete</button>
+    </div>
+  </div>
+  </div>

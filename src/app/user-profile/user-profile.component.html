@@ -1,0 +1,17 @@
+<div class="profile">
+    <img src="{{user?.Image}}" alt="">
+    <h2>{{user?.Name|titlecase}}</h2>
+</div>   
+<h1>All Posts</h1>
+<div class="section">
+    <h2 *ngIf="Nopost">No Posts Yet!</h2>
+<div class="post" *ngFor="let post of allposts">
+  <div class="images">
+    <h3>{{ post.title | titlecase}}</h3>
+    <img src="{{ post.image }}" alt="" />
+    <div class="like">
+    <h3 (click)="likeAndDislike(post.id,post)">{{post.likes}} <img src="../../assets/images/facebook-like-logo-png-transparent.png" alt=""></h3>
+    </div>
+  </div>
+</div>
+</div>

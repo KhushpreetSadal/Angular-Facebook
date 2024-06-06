@@ -1,0 +1,82 @@
+.video{
+    display: flex;
+    width: 100%;
+
+}
+
+.section1{
+    width: 24%; 
+    height: 80vh;
+    background-color:white;
+    margin: 1rem;   
+    border-radius: 1rem;      
+}
+
+
+
+.section2{
+    width: 49%;  
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.section2 .post{
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: white;
+
+}
+.section2 .post .names{
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+}
+.section2 .post .names img{
+    border-radius: 50%;
+    width: 3rem;
+    margin: 0rem 1rem;
+
+}
+.section2 .video{
+    display: flex;
+    flex-direction: column;
+}
+.section2 .video h3{
+    margin: .5rem;
+    background-color: white;
+
+}
+.section2 .video .likes{
+    background-color: white;
+    border: none;
+    margin: 1rem;
+    margin-top: 0px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    width: fit-content;
+
+}
+.section2 .video .likes img{
+width: 2.5rem;
+margin: .5rem;
+}
+
+.section2 .video video{
+    width: 100%;
+
+}
+
+
+
+
+
+.section3{
+    width: 24%;          
+    background-color: white;
+    margin: 1rem; 
+    height: fit-content;
+    border-radius: 1rem;
+    padding: 1rem; 
+}

@@ -1,0 +1,23 @@
+<div class="postpage" *ngIf="show">
+    <div class="text">
+    <h1>Edit Image</h1>
+    </div>
+
+    <form class="form" #form="ngForm" (ngSubmit)="savePost(form.value)">
+        <input class="input" type="text" name="title" id="title" placeholder="Title" ngModel="{{posts.title}}">
+        <input class="input" type="text" name="image" id="image" placeholder="Image Url" ngModel="{{posts.image}}">
+        <button id="btn">Save</button>
+    </form>
+</div>
+
+<div class="postpage" *ngIf="!show">
+    <div class="text">
+    <h1>Edit Video</h1>
+    </div>
+
+    <form class="form" #form="ngForm" (ngSubmit)="savePost(form.value)">
+        <input class="input" type="text" name="title" id="title" placeholder="Title" ngModel="{{posts.title}}">
+        <input class="input" type="text" name="video" id="video" placeholder="Video Url" ngModel="{{posts.video}}">
+        <button id="btn">Save</button>
+    </form>
+</div>

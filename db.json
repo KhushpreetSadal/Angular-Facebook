@@ -1,0 +1,257 @@
+{
+  "user": [
+    {
+      "Name": "robert",
+      "Email": "robert@gmail.com",
+      "Image": "https://randomuser.me/api/portraits/men/51.jpg",
+      "Password": "123456",
+      "id": "1"
+    },
+    {
+      "Name": "brian",
+      "Email": "brian@gmail.com",
+      "Image": "https://randomuser.me/api/portraits/men/18.jpg",
+      "Password": "123456",
+      "id": "2"
+    },
+    {
+      "Email": "leona.russell@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/75.jpg",
+      "Name": "Leona Russell",
+      "Password": "123456",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "Name": "Julian Martinez",
+      "Email": "julian.martinez@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/79.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "5",
+      "Name": "Okan Gümüşpala",
+      "Email": "okan.gumuspala@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/77.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "6",
+      "Name": "Sevastiana Doshchenko",
+      "Email": "sevastiana.doshchenko@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/38.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "7",
+      "Name": "Buse Poçan",
+      "Email": "buse.pocan@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/32.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "8",
+      "Name": "Lenny Modderkolk",
+      "Email": "lenny.modderkolk@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/90.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "9",
+      "Name": "Yivga Dlugosh",
+      "Email": "yivga.dlugosh@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/44.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "10",
+      "Name": "Beatriz Rodríguez",
+      "Email": "beatriz.rodriguez@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/16.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "11",
+      "Name": "Jim Ray",
+      "Email": "jim.ray@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/73.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "12",
+      "Name": "Theodore Rosland",
+      "Email": "theodore.rosland@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/6.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "13",
+      "Name": "Citlali Gutiérrez",
+      "Email": "citlali.gutierrez@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/35.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "14",
+      "Name": "Lubomir Rukavina",
+      "Email": "lubomir.rukavina@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/78.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "15",
+      "Name": "Mendo Silva",
+      "Email": "mendo.silva@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/8.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "16",
+      "Name": "Floyd Ryan",
+      "Email": "floyd.ryan@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/44.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "17",
+      "Name": "Godofredo Cardoso",
+      "Email": "godofredo.cardoso@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/84.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "18",
+      "Name": "Diane Legrand",
+      "Email": "diane.legrand@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/96.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "19",
+      "Name": "Joanne Morrison",
+      "Email": "joanne.morrison@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/50.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "20",
+      "Name": "Rachel Cunningham",
+      "Email": "rachel.cunningham@example.com",
+      "Image": "https://randomuser.me/api/portraits/women/3.jpg",
+      "Password": "123456"
+    },
+    {
+      "id": "21",
+      "Name": "Jackson Elliott",
+      "Email": "jackson.elliott@example.com",
+      "Image": "https://randomuser.me/api/portraits/men/67.jpg",
+      "Password": "123456"
+    }
+  ],
+  "posts": [
+    {
+      "title": "special Moon ",
+      "image": "https://t3.ftcdn.net/jpg/05/54/02/68/360_F_554026892_UsZG4Tm3GPUV6fxzlpvV0qOOe9KKYvCj.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/51.jpg",
+      "username": "robert",
+      "likes": 9,
+      "id": "1"
+    },
+    {
+      "title": "Beautiful Nature",
+      "image": "https://randomwordgenerator.com/img/picture-generator/53e2d3454252a914f1dc8460962e33791c3ad6e04e50744074267bd59e44cd_640.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/49.jpg",
+      "username": "brian",
+      "likes": 3,
+      "id": "2"
+    },
+    {
+      "title": "Dogs",
+      "image": "https://randompicturegenerator.com/img/dog-generator/gfa5e497e0a411b8011b6351f400a904b852bc3db30faf7b686e1281f6c7b68b77dee05d40c569ec60415cfa768c4909e_640.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/51.jpg",
+      "username": "robert",
+      "likes": 4,
+      "id": "3"
+    },
+    {
+      "title": "Flowers",
+      "image": "https://randompicturegenerator.com/img/flower-generator/g5d859d61e676d0ed3cc600b6042b3605b14c061b683705a5cadae5a4ceaee4119a381cad0e7776b447e3f3025a4b1f36_640.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/49.jpg",
+      "username": "brian",
+      "likes": 4,
+      "id": "4"
+    },
+    {
+      "title": "Beautiful Nature Image",
+      "image": "https://randompicturegenerator.com/img/national-park-generator/g6764007f22f73de44d8a7c0beb735eca1dc763b0526c8f79cc876f1cbbb0c86cf2b71e1c94ac45df23773dd2056a88ed_640.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/51.jpg",
+      "username": "robert",
+      "likes": 6,
+      "id": "5"
+    },
+    {
+      "title": "Cars",
+      "image": "https://randompicturegenerator.com/img/car-generator/g4d1c879a6da5a78caef9f1c01a14286fe8178ed6d469708ffae2c064be5942e977145da83019076285ae398124796792_640.jpg",
+      "userimage": "https://randomuser.me/api/portraits/men/51.jpg",
+      "username": "robert",
+      "likes": 5,
+      "id": "6"
+    }
+  ],
+  "videos": [
+    {
+      "title": "Wild life",
+      "video": "https://cdn.pixabay.com/video/2023/11/12/188861-883827797_large.mp4",
+      "userimage": "https://randomuser.me/api/portraits/men/90.jpg",
+      "username": "Lenny Modderkolk",
+      "likes": 7,
+      "id": "1"
+    },
+    {
+      "title": "Beautiful Nature videos",
+      "video": "https://cdn.pixabay.com/video/2020/10/19/52849-473336269_large.mp4",
+      "userimage": "https://randomuser.me/api/portraits/men/51.jpg",
+      "username": "robert",
+      "likes": 5,
+      "id": "2"
+    },
+    {
+      "title": "Sunset in City",
+      "video": "https://cdn.pixabay.com/video/2022/03/18/111204-689949818_large.mp4",
+      "userimage": "https://randomuser.me/api/portraits/men/18.jpg",
+      "username": "brian",
+      "likes": 7,
+      "id": "3"
+    },
+    {
+      "title": "Cosmic Rays",
+      "video": "https://cdn.pixabay.com/video/2021/10/05/90877-629483574_large.mp4",
+      "userimage": "https://randomuser.me/api/portraits/women/75.jpg",
+      "username": "Leona Russell",
+      "likes": 4,
+      "id": "4"
+    },
+    {
+      "title": "Beautiful Birds",
+      "video": "https://cdn.pixabay.com/video/2022/11/22/140111-774507949_large.mp4",
+      "userimage": "https://randomuser.me/api/portraits/men/79.jpg",
+      "username": "Julian Martinez",
+      "likes": 5,
+      "id": "5"
+    }
+  ],
+  "friends": [
+    {
+      "id": "3",
+      "Name": "Leona Russell",
+      "Image": "https://randomuser.me/api/portraits/women/75.jpg",
+      "user": "robert@gmail.com"
+    },
+    {
+      "id": "2",
+      "Name": "brian",
+      "Image": "https://randomuser.me/api/portraits/men/18.jpg",
+      "user": "robert@gmail.com"
+    }
+  ]
+}
