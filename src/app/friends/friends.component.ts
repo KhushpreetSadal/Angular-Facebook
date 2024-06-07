@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { UserService } from '../serices/user.service';
 import { friends } from '../../../datatype';
 import { NgFor, TitleCasePipe } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-friends',
@@ -12,7 +13,7 @@ import { NgFor, TitleCasePipe } from '@angular/common';
 })
 export class FriendsComponent {
 
-constructor(private service:UserService){}
+constructor(private service:UserService,private router:Router){}
 
 Friends:friends|any = []
 
@@ -40,6 +41,12 @@ remove(data:string){
       alert("Removed Successfully")
     }
   })
+
+}
+
+
+showprofile(userid:string){
+  this.router.navigate([`user-profile/${userid}`])
 
 }
 

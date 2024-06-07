@@ -242,39 +242,33 @@
   ],
   "friends": [
     {
-      "id": "1",
+      "id": "3",
       "Name": "Leona Russell",
       "Image": "https://randomuser.me/api/portraits/women/75.jpg",
+      "user": "robert@gmail.com"
+    },
+    {
+      "id": "7",
+      "Name": "Buse Poçan",
+      "Image": "https://randomuser.me/api/portraits/women/32.jpg",
+      "user": "robert@gmail.com"
+    },
+    {
+      "id": "8",
+      "Name": "Lenny Modderkolk",
+      "Image": "https://randomuser.me/api/portraits/men/90.jpg",
+      "user": "robert@gmail.com"
+    },
+    {
+      "id": "11",
+      "Name": "Jim Ray",
+      "Image": "https://randomuser.me/api/portraits/men/73.jpg",
       "user": "robert@gmail.com"
     },
     {
       "id": "2",
       "Name": "brian",
       "Image": "https://randomuser.me/api/portraits/men/18.jpg",
-      "user": "robert@gmail.com"
-    },
-    {
-      "id": "7917",
-      "Name": "Lenny Modderkolk",
-      "Image": "https://randomuser.me/api/portraits/men/90.jpg",
-      "user": "robert@gmail.com"
-    },
-    {
-      "id": "0cef",
-      "Name": "Lubomir Rukavina",
-      "Image": "https://randomuser.me/api/portraits/men/78.jpg",
-      "user": "robert@gmail.com"
-    },
-    {
-      "id": "e61f",
-      "Name": "Rachel Cunningham",
-      "Image": "https://randomuser.me/api/portraits/women/3.jpg",
-      "user": "robert@gmail.com"
-    },
-    {
-      "id": "457c",
-      "Name": "Jackson Elliott",
-      "Image": "https://randomuser.me/api/portraits/men/67.jpg",
       "user": "robert@gmail.com"
     }
   ]

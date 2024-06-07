@@ -2,8 +2,10 @@
     <h1>Friends</h1>
     <div class="list">
     <div class="section" *ngFor="let list of Friends">
+        <div class="users"  (click)="showprofile(list.id)">
         <img src="{{list.Image}}" alt="">
         <h2>{{list.Name | titlecase }}</h2>
+        </div>
         <button id="Btn" (click)="remove(list.id)">Remove</button>
     </div>
     </div>

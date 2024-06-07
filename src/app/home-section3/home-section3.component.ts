@@ -40,9 +40,11 @@ export class HomeSection3Component {
            const newEle = {
             Name:"",
             Image:"",
+            id:"",
            }
            newEle.Image = element.Image
            newEle.Name = element.Name
+           newEle.id = element.id
            this.friends.push(newEle)
          }
        })
