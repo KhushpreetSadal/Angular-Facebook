@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../serices/user.service';
 import { friends, login, post, signin } from '../../../datatype';
+import { ConstantPool } from '@angular/compiler';
 
 @Component({
   selector: 'app-home-section3',
@@ -59,6 +60,10 @@ export class HomeSection3Component {
     if(user.length){
       data.user = user[0].Email
       this.service.addFriend(data).subscribe((res)=>{
+        if(res){
+          console.log(res)
+          this.getFriends()
+        }
         
       })
 
@@ -68,9 +73,11 @@ export class HomeSection3Component {
    getFriends(){
     this.service.getFriends().subscribe((res:any)=>{
       if(res){
-      let newlist = this.friends.filter((user:friends)=> user.id != res[0].id)
-      console.log(res)
-      console.log(newlist)
+        res.forEach((element:friends) => {
+          if(element.id != this.friends.id){
+            console.log(element)
+          }
+        });
       }
     })
    }
