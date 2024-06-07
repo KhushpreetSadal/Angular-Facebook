@@ -60,8 +60,8 @@ export class HomeSection3Component {
       data.user = user[0].Email
       this.service.addFriend(data).subscribe((res:any)=>{
         if(res){
-          console.log(res)
           this.getFriends()
+          
         }
         
       })
@@ -70,14 +70,9 @@ export class HomeSection3Component {
    }
 
    getFriends(){
-    this.service.getFriends().subscribe((res:any)=>{
-      if(res){
-        res.forEach((element:friends) => {
-          if(element.id != this.friends.id){
-            console.log(element)
-          }
-        });
-      }
+    this.service.getFriends().subscribe((res:friends)=>{
+
+     
     })
    }
 
