@@ -6,6 +6,7 @@ import { PostpageComponent } from './postpage/postpage.component';
 import { AllpostComponent } from './allpost/allpost.component';
 import { EditpostComponent } from './editpost/editpost.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { FriendsComponent } from './friends/friends.component';
 
 
 
@@ -46,6 +47,12 @@ export const routes: Routes = [
         component:UserProfileComponent,
         canActivate:[authGuard]
     },
+    {
+        path:"friends",
+        component:FriendsComponent,
+        canActivate:[authGuard]
+    },
+
 
 
 ];

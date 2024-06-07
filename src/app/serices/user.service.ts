@@ -10,6 +10,8 @@ export class UserService {
 
   constructor(private http:HttpClient) { }
 
+  // user services
+
   signinUser(data:signin){
     return this.http.post<login>(`http://localhost:3000/user`,data);
   }
@@ -17,6 +19,18 @@ export class UserService {
   loginUser(data:login){
     return this.http.get(`http://localhost:3000/user?Email=${data.Email}&Password=${data.Password}`)
   }
+
+  getusers(){
+    return this.http.get('http://localhost:3000/user/')
+    }
+  
+
+  getUser(id:string){
+    return this.http.get<signin>(`http://localhost:3000/user/${id}`)
+  }
+
+
+  // post services
 
   newPost(data:post){
     return this.http.post("http://localhost:3000/posts",data)
@@ -50,15 +64,8 @@ export class UserService {
 
   }
 
-  getusers(){
-    return this.http.get('http://localhost:3000/user/')
-    }
-  
-
-  getUser(id:string){
-    return this.http.get<signin>(`http://localhost:3000/user/${id}`)
-  }
-
+ 
+  // video services
 
   getVideos(){
     return this.http.get("http://localhost:3000/videos")
@@ -92,12 +99,18 @@ export class UserService {
     return this.http.patch(`http://localhost:3000/videos/${data.id}`,data)
 
   }
+
+  // friends services
   
   addFriend(data:friends){
     return this.http.post("http://localhost:3000/friends/",data)
   }
 
-  getFriends(){
-    return this.http.get<friends>("http://localhost:3000/friends")
+  getFriends(name:string){
+    return this.http.get<friends>(`http://localhost:3000/friends?user=${name}`)
+  }
+  
+  removeFriend(id:string){
+    return this.http.delete(`http://localhost:3000/friends/${id}`)
   }
 }

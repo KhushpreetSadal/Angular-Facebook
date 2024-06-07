@@ -2,7 +2,7 @@ import { NgFor, TitleCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../serices/user.service';
-import { friends, login, post, signin } from '../../../datatype';
+import { friends} from '../../../datatype';
 
 @Component({
   selector: 'app-home-section3',
@@ -13,7 +13,7 @@ import { friends, login, post, signin } from '../../../datatype';
 })
 export class HomeSection3Component {
 
-  friends:any = []
+  friends:any|friends = []
 
   ngOnInit(): void {
   this.getusers()
@@ -40,11 +40,9 @@ export class HomeSection3Component {
            const newEle = {
             Name:"",
             Image:"",
-            id:"",
            }
            newEle.Image = element.Image
            newEle.Name = element.Name
-           newEle.id = element.id
            this.friends.push(newEle)
          }
        })
@@ -61,20 +59,28 @@ export class HomeSection3Component {
       this.service.addFriend(data).subscribe((res:any)=>{
         if(res){
           this.getFriends()
-          
+          alert("Friend Added Sucessfully")
         }
-        
       })
 
     }   
    }
 
    getFriends(){
-    this.service.getFriends().subscribe((res:friends)=>{
-
-     
+    let local = localStorage.getItem("user")
+  let user  = local &&  JSON.parse(local)
+  if(user){
+    this.service.getFriends(user[0].Email).subscribe((res:any)=>{
+      if(res.length){
+      for (let i = 0; i < res.length; i++) {
+       let list = this.friends.filter((user:friends) => user.Name != res[i].Name && user.id != res[i].id);
+       this.friends = list    
+      }
+      
+    }
     })
    }
+  }
 
 
 }
