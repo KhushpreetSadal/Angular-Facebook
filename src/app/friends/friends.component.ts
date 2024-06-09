@@ -22,6 +22,7 @@ this.getFriends()
   
 }
 
+
 getFriends(){
   let local = localStorage.getItem("user")
   let user  = local &&  JSON.parse(local)

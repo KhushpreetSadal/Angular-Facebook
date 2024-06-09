@@ -7,6 +7,7 @@ import { AllpostComponent } from './allpost/allpost.component';
 import { EditpostComponent } from './editpost/editpost.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FriendsComponent } from './friends/friends.component';
+import { MarketplaceComponent } from './marketplace/marketplace.component';
 
 
 
@@ -52,7 +53,11 @@ export const routes: Routes = [
         component:FriendsComponent,
         canActivate:[authGuard]
     },
-
+    {
+        path:"market",
+        component:MarketplaceComponent,
+        canActivate:[authGuard]
+    },
 
 
 ];

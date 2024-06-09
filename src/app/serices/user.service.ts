@@ -1,6 +1,7 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable, inject } from '@angular/core';
 import { friends, login, post, signin, video } from '../../../datatype';
 import { HttpClient } from '@angular/common/http';
+import { Subject } from 'rxjs';
 
 
 @Injectable({
@@ -8,7 +9,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class UserService {
 
-  constructor(private http:HttpClient) { }
+  http = inject(HttpClient)
+
+  clickEvent = new Subject()
+
 
   // user services
 
@@ -113,4 +117,5 @@ export class UserService {
   removeFriend(id:string){
     return this.http.delete(`http://localhost:3000/friends/${id}`)
   }
+
 }

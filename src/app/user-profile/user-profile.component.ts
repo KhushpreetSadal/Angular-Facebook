@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Injectable, inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { UserService } from '../serices/user.service';
 import { signin,post } from '../../../datatype';
 import { NgFor, NgIf, TitleCasePipe } from '@angular/common';
+
+
 
 @Component({
   selector: 'app-user-profile',
@@ -20,13 +22,24 @@ export class UserProfileComponent {
   friends:any = []
   Nopost = false
 
-  constructor(private activatedroute:ActivatedRoute, private service:UserService){}
+constructor(private activatedroute:ActivatedRoute){
+  this.service.clickEvent.subscribe(()=>{
+    this.getUser()
+    this.getallpost()
+  })
+}
+
+service = inject(UserService)
+
+
 ngOnInit(){
   this.getUser()
   this.getallpost()
 }
 
+
 getUser(){
+  console.log("user")
   let id = this.activatedroute.snapshot.paramMap.get("id")
   if(id){
   this.service.getUser(id).subscribe((res)=>{

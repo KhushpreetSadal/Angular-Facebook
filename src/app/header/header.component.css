@@ -57,3 +57,34 @@ header nav #user img{
 header nav #user {
     margin-right: 1rem;
 }
+
+header nav #user:hover{
+    cursor: pointer;
+}
+
+header nav .logo{
+    position: relative;
+}
+
+header .result{
+    position: absolute;
+    height: max-content;
+    top: 100%;
+    left: 20%;
+    background-color: white;
+    padding: 0rem 1rem 1rem 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+}
+header .result ul{
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+header .result ul li{
+    font-size: 1.1rem;
+    margin: .3rem;
+    width: 100%;
+}
+header .result ul li:hover{
+
+    cursor: pointer;
+}

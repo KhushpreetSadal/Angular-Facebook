@@ -2,22 +2,26 @@
     <nav>
         <div class="logo">
             <img src="../../assets/images/logo.png" alt="">
-            <form #form="ngForm" (submit)="search(form.value)">
-                <input type="text" name="Name" id="Name" ngModel placeholder="Search">
-                <button>Search</button>
+            <form #form="ngForm" (keyup)="search(form.value)">
+                <input type="text" name="Name" id="Name" ngModel placeholder="Search" >
+                <button (click)="service.clickEvent.next('')">Search</button>
             </form>
+            <div class="result" *ngIf="show">
+                <ul  *ngFor="let item of result">
+                    <li (click)="profile(item.id)">{{item.Name|titlecase}}</li>
+                </ul>
+            </div>
         </div>
     
         <ul>
             <li><a  routerLink="/home-page"><img src="../../assets/images/home.png" alt=""></a></li>
             <li><a routerLink="/video"><img src="../../assets/images/video.png " alt=""></a></li>
-            <li><a><img src="../../assets/images/marketplace.png" alt=""></a></li>
+            <li><a routerLink="/market"><img src="../../assets/images/marketplace.png" alt=""></a></li>
             <li><a routerLink="/friends"><img src="../../assets/images/friends.png" alt=""></a></li>
         </ul>
-        <div id="user">
+        <div id="user" (click)="profile(userid)">
             <img src="{{image}}">
-            <h3>{{Username | titlecase}}</h3>
-
+            <h3 >{{Username | titlecase}}</h3>
         </div>
     </nav>
 </header>
