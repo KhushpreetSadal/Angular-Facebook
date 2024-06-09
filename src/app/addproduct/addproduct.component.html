@@ -1,0 +1,12 @@
+<div class="addproduct">
+    <h1>Sell Product</h1>
+    
+    <form #form="ngForm" (submit)="submit(form.value)" class="form">
+        <h2 *ngIf="error">Please fill all the Values!</h2>
+        <input type="text" name="Image" id="image" ngModel placeholder="Image Url">
+        <input type="number" name="Price" id="price" ngModel placeholder="Price">
+        <textarea name="Description" id="desc" ngModel placeholder="Description"></textarea>
+        <button>Submit</button>
+    </form>
+    
+</div>

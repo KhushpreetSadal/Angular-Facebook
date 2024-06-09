@@ -21,15 +21,15 @@ export class UserProfileComponent {
   ableLike=true
   friends:any = []
   Nopost = false
+  
+  service = inject(UserService)
 
 constructor(private activatedroute:ActivatedRoute){
   this.service.clickEvent.subscribe(()=>{
-    this.getUser()
-    this.getallpost()
+    this.ngOnInit()
   })
 }
 
-service = inject(UserService)
 
 
 ngOnInit(){
@@ -39,7 +39,6 @@ ngOnInit(){
 
 
 getUser(){
-  console.log("user")
   let id = this.activatedroute.snapshot.paramMap.get("id")
   if(id){
   this.service.getUser(id).subscribe((res)=>{
@@ -60,8 +59,10 @@ getPost(){
         let newres  = JSON.stringify(res)
         if(newres.length>2){
           this.allposts = res
+          this.Nopost = false
         }else{
           this.Nopost = true
+          this.allposts = []
         }
       })
     }

@@ -8,6 +8,7 @@ import { EditpostComponent } from './editpost/editpost.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
+import { AddproductComponent } from './addproduct/addproduct.component';
 
 
 
@@ -58,6 +59,10 @@ export const routes: Routes = [
         component:MarketplaceComponent,
         canActivate:[authGuard]
     },
-
+    {
+        path:"addProduct",
+        component:AddproductComponent,
+        canActivate:[authGuard]
+    }
 
 ];

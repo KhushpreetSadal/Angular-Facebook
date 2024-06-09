@@ -1,5 +1,5 @@
 import { EventEmitter, Injectable, inject } from '@angular/core';
-import { friends, login, post, signin, video } from '../../../datatype';
+import { Product, friends, login, post, signin, video } from '../../../datatype';
 import { HttpClient } from '@angular/common/http';
 import { Subject } from 'rxjs';
 
@@ -116,6 +116,15 @@ export class UserService {
   
   removeFriend(id:string){
     return this.http.delete(`http://localhost:3000/friends/${id}`)
+  }
+
+  // marketplace services
+
+  addProduct(data:Product){
+    return this.http.post("http://localhost:3000/marketplace",data)
+  }
+  getAllProducts(){
+    return this.http.get("http://localhost:3000/marketplace")     
   }
 
 }

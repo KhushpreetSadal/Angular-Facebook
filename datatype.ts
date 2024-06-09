@@ -36,3 +36,11 @@ export interface friends{
     id:undefined|string
 
 }
+
+export interface Product{
+    Image:string,
+    Price:string,
+    Description:string,
+    Email:string|undefined
+    id:undefined|string,
+}

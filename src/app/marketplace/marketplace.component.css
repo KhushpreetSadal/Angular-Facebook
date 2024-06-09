@@ -1,0 +1,24 @@
+.marketplace{
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.section{
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem;
+    width: 25%;
+}
+.section img{
+    width: 90%;
+    padding: 1rem;
+}
+.section .price{
+    margin: 0rem 1rem 1rem;
+}
+.section .price h2{
+    padding-bottom: .5rem;
+}

@@ -1,5 +1,5 @@
 import { NgFor, NgIf, TitleCasePipe } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, destroyPlatform, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { UserService } from '../serices/user.service';
@@ -8,29 +8,30 @@ import { friends } from '../../../datatype';
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FormsModule,TitleCasePipe,RouterLink,NgFor,NgIf],
+  imports: [FormsModule, TitleCasePipe, RouterLink, NgFor, NgIf],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-Username = ""
-image = ""
-userid = ""
-users:any=[]
-result:any = []
-show = false
+  formInput = ""
+  Username = ""
+  image = ""
+  userid = ""
+  users: any = []
+  result: any = []
+  show = false
 
-router = inject(Router)
-service = inject(UserService)
+  router = inject(Router)
+  service = inject(UserService)
 
   ngOnInit(): void {
     this.getUser()
     this.getAllUsers()
   }
 
-  getUser(){
+  getUser() {
     let local = localStorage.getItem("user");
-    if(local?.length){
+    if (local?.length) {
       let info = local && JSON.parse(local)
       this.Username = info[0].Name
       this.image = info[0].Image
@@ -38,18 +39,18 @@ service = inject(UserService)
     }
   }
 
-  getAllUsers(){
-    this.service.getusers().subscribe((res:any)=>{
-      if(res){
-        let loacl = localStorage.getItem("user")
-        let user = loacl && JSON.parse(loacl)
- 
-        res.forEach((element:any) => {
-          if(element.Email != user[0].Email){
+  getAllUsers() {
+    this.service.getusers().subscribe((res: any) => {
+      if (res) {
+        let local = localStorage.getItem("user")
+        let user = local && JSON.parse(local)
+
+        res.forEach((element: any) => {
+          if (element.Email != user[0].Email) {
             const newEle = {
-             Name:"",
-             Image:"",
-             id:"",
+              Name: "",
+              Image: "",
+              id: "",
             }
             newEle.Image = element.Image
             newEle.Name = element.Name
@@ -61,38 +62,39 @@ service = inject(UserService)
     })
   }
 
-  search(data:any){
-    if(data.Name != "" ){
+  search(data: any) {
+    if (data.Name != "") {
       this.show = true
-    let name = data.Name.toLocaleLowerCase()
-    this.result = []
-    if(data){
-      this.users.forEach((ele:friends)=>{
-        let user = ele.Name.toLocaleLowerCase()
-        if(user.includes(name)){
-          console.log(ele)
-          if(ele.Name.length){
-            console.log("if")
+      let name = data.Name.toLocaleLowerCase()
+      this.result = []
+      if (name.length) {
+        this.users.forEach((ele: friends) => {
+          let user = ele.Name.toLocaleLowerCase()
+          if (user.includes(name)) {
             this.result.push(ele)
-          }else{
-            console.log("else")
             this.show = true
+          } else if (this.result.length == 0) {
+            this.show = false
           }
-        }
-      })
+        })
+      }
+
+    } else {
+      this.show = false
     }
 
-  }else{
-    this.show = false
-  }
-   
   }
 
 
-profile(userid:string){
- this.router.navigate([`user-profile/${userid}`])
- this.show = false
-}
+  profile(userid: string) {
+    if(userid != ""){
+      this.service.getUser(userid).subscribe((res)=>{
+        this.formInput = res.Name
+        this.router.navigate([`user-profile/${userid}`])
+        this.show = false
+      })
+    }
+  }
 
 
 }

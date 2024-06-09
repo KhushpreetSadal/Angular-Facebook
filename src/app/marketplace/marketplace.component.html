@@ -1,1 +1,9 @@
-<p>marketplace works!</p>
+<div class="marketplace">
+    <div class="section" *ngFor="let product of products">
+        <img src="{{product.Image}}" alt="">
+        <div class="price">
+        <h2>{{product.Price}}</h2>
+        <p>{{product.Description}}</p>
+        </div>
+    </div>
+</div>
