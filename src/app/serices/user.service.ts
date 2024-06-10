@@ -123,8 +123,18 @@ export class UserService {
   addProduct(data:Product){
     return this.http.post("http://localhost:3000/marketplace",data)
   }
+
   getAllProducts(){
     return this.http.get("http://localhost:3000/marketplace")     
   }
 
+  getProduct(id:string){
+    return this.http.get(`http://localhost:3000/marketplace/${id}`)
+
+  }
+
+  myProducts(name:string){
+    return this.http.get(`http://localhost:3000/marketplace?Name=${name}`)
+  }
+  
 }

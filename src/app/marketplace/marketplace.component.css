@@ -1,24 +1,85 @@
+.market{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.controls{
+    width: 25%;
+    max-height:70vh;
+    background-color: white;
+    margin:2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+
+
+.controls h1{
+    color: #0866ff;
+    margin-bottom: 2rem;
+}
+
+.controls button{
+    background-color: #0866ff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: .5rem .85rem;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .3rem 0rem;
+    text-decoration: none;
+    
+}
+
+
+
+
 .marketplace{
     display: flex;
     margin: 1rem;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center ;
+    width: 75%;
     
 }
 .section{
     background-color: white;
     border-radius: 1rem;
     margin: 1rem;
-    width: 25%;
+    width: 45%;
 }
-.section img{
-    width: 90%;
+
+.section .image{
+width: 90%;
+margin: auto;
+display: flex;
+}
+.section .image img{
+    margin: auto;
+    height: 40vh;
     padding: 1rem;
 }
+
+.section h2{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+.section h2 img{
+    width: 4rem;
+    border-radius: 50%;
+    padding: 0 1rem;
+}
 .section .price{
-    margin: 0rem 1rem 1rem;
+    margin: 0rem 2rem 1rem;
 }
 .section .price h2{
     padding-bottom: .5rem;
+    margin: 0rem;
 }

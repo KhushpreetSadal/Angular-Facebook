@@ -41,6 +41,7 @@ export interface Product{
     Image:string,
     Price:string,
     Description:string,
-    Email:string|undefined
+    Name:string|undefined,
+    userImage:string|undefined,
     id:undefined|string,
 }

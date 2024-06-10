@@ -9,6 +9,7 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
 import { FriendsComponent } from './friends/friends.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -63,6 +64,11 @@ export const routes: Routes = [
         path:"addProduct",
         component:AddproductComponent,
         canActivate:[authGuard]
-    }
+    },
+    {
+        path:"product/:id",
+        component:ProductComponent,
+        canActivate:[authGuard]
+    },
 
 ];

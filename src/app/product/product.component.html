@@ -1,0 +1,14 @@
+<h1>Product</h1>
+<div class="product" *ngFor="let list of product">
+
+    <div class="user">
+        <h2><img src="{{list.userImage}}" alt="">{{list.Name|titlecase}}</h2>        
+    </div>
+    <div class="image">
+        <img src="{{list.Image}}" alt="">
+        <div class="price">
+        <h2>{{list.Price|currency:"INR"}}</h2>
+        <h3>{{list.Description|titlecase}}</h3>
+        </div>
+    </div>
+</div>

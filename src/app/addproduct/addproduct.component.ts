@@ -24,7 +24,8 @@ export class AddproductComponent {
       
       let local = localStorage.getItem("user")
       let user = local && JSON.parse(local)
-      data.Email = user[0].Email
+      data.Name = user[0].Name
+      data.userImage = user[0].Image
       console.log(user[0].Email)
       this.service.addProduct(data).subscribe((res)=>{
         if(res){

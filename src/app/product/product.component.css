@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color: #0866ff;
+    margin: 2rem;
+}
+
+.product{
+    width: 80%;
+    padding: 1rem;
+margin: auto;
+border-radius: 1rem;
+background-color: white;
+margin-bottom: 2rem;
+
+}
+.user h2{
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: 1rem;
+
+}
+.user h2 img{
+    width: 4rem;
+    border-radius: 50%;
+    margin: 0 1rem;
+}
+
+.product .image{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+.product .image img{
+    width: 50%;
+    margin: auto;
+}
+.product .image .price{
+    margin: 1rem 2rem 2rem;
+}
