@@ -88,3 +88,20 @@ header .result ul li:hover{
 
     cursor: pointer;
 }
+
+
+@media screen and (max-width:970px) {
+    header nav{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    header nav #user{
+        display: none;
+    }
+    header #ul{
+        margin-right: 0%;
+       
+    }
+}

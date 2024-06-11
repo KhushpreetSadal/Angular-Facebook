@@ -1,16 +1,11 @@
 
     <div class="section1">
-        <div class="user">
-
-        <img src="{{image}}" alt="">
-        <h3>{{Username | titlecase }}</h3>
-
-        </div>
         <div class="posts">
         <h1>Posts</h1>
         <ul>
             <li><button id="button" (click)="creatPost(true)">Creat new post</button></li>
             <li><button id="button" (click)="creatPost(false)">All Posts</button></li>
+            <li><button id="button" class="users" (click)="alluser()">All Users</button></li>
             <li><button (click)="logout()" id="button">logout</button></li>
         </ul>
         </div>

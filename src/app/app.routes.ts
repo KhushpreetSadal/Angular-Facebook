@@ -10,6 +10,7 @@ import { FriendsComponent } from './friends/friends.component';
 import { MarketplaceComponent } from './marketplace/marketplace.component';
 import { AddproductComponent } from './addproduct/addproduct.component';
 import { ProductComponent } from './product/product.component';
+import { HomeSection3Component } from './home-section3/home-section3.component';
 
 
 
@@ -29,6 +30,11 @@ export const routes: Routes = [
         loadComponent:()=>import("./video/video.component").then(comp => comp.VideoComponent),
         canActivate:[authGuard]
 
+    },
+    {
+        path:"allusers",
+        component:HomeSection3Component,
+        canActivate:[authGuard]
     },
     {
         path:"new-post/:id",
@@ -57,7 +63,7 @@ export const routes: Routes = [
     },
     {
         path:"market",
-        component:MarketplaceComponent,
+        loadComponent:()=>import("./marketplace/marketplace.component").then(market => market.MarketplaceComponent),
         canActivate:[authGuard]
     },
     {

@@ -64,4 +64,7 @@ export class HomeSection1Component {
     }
   }
 
+  alluser(){
+    this.router.navigate(["allusers"])
+  }
 }

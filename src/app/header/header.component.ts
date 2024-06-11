@@ -19,10 +19,17 @@ export class HeaderComponent {
   userid = ""
   users: any = []
   result: any = []
+  profileid:any = ""
   show = false
 
   router = inject(Router)
   service = inject(UserService)
+
+  constructor(){
+    this.service.clickEvent.subscribe(()=>{
+      this.formInput=""
+    })
+  }
 
   ngOnInit(): void {
     this.getUser()
@@ -89,12 +96,27 @@ export class HeaderComponent {
   profile(userid: string) {
     if(userid != ""){
       this.service.getUser(userid).subscribe((res)=>{
-        this.formInput = res.Name
-        this.router.navigate([`user-profile/${userid}`])
-        this.show = false
+        if(res){
+          this.formInput = res.Name
+          this.profileid = res &&  res.id
+          this.show = false
+
+        }
+       
+        
       })
     }
   }
 
+  navigate(){
+    this.clickevent()
+    this.router.navigate([`user-profile/${this.profileid}`])
+
+  }
+
+  clickevent(){
+    this.service.clickEvent.next('')
+  }
+    
 
 }

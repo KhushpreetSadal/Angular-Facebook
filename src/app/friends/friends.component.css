@@ -42,3 +42,21 @@ h1{
     padding: 0rem .5rem;
     
 } 
+
+@media screen and (max-width:610px) {
+
+    h2{
+        font-size: 1.3rem;
+    }
+    .list{
+        width: 85%;
+    }
+    .section img{
+        width: 4rem;
+    }
+    #Btn{
+        font-size: 1rem;
+    }
+
+    
+}

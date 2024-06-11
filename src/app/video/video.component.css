@@ -80,3 +80,23 @@ margin: .5rem;
     border-radius: 1rem;
     padding: 1rem; 
 }
+
+@media screen and (max-width:970px) {
+    .video{
+        flex-direction: column;
+    }
+    .section1{
+        width: 93%;
+        height: max-content;
+        margin: 2rem auto 0rem; 
+    }
+    
+    .section2{
+        width: 97%;
+        margin: 1rem auto;
+    }
+
+    .section3{
+        display: none;
+    }
+}

@@ -1,5 +1,5 @@
 import { Component, Injectable, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from '../serices/user.service';
 import { signin,post } from '../../../datatype';
 import { NgFor, NgIf, TitleCasePipe } from '@angular/common';
@@ -23,11 +23,15 @@ export class UserProfileComponent {
   Nopost = false
   
   service = inject(UserService)
+  router = inject(Router)
 
 constructor(private activatedroute:ActivatedRoute){
-  this.service.clickEvent.subscribe(()=>{
-    this.ngOnInit()
+  this.activatedroute.paramMap.subscribe((res)=>{
+    if(res){
+      this.ngOnInit()
+    }
   })
+  
 }
 
 
@@ -36,6 +40,7 @@ ngOnInit(){
   this.getUser()
   this.getallpost()
 }
+
 
 
 getUser(){

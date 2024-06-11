@@ -2,11 +2,13 @@
 
 <div class="controls">
     <h1>Posts</h1>
+    <div class="button">
     <button *ngIf="!show" (click)="myProducts()" >My Products</button>
     <button *ngIf="show" (click)="getProducts()" >Products</button>
 
     <button (click)="addProduct()">Add Product</button>
     <button (click)="logout()">logout</button>
+    </div>
 </div>
 
 <div class="marketplace">
