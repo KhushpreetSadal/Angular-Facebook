@@ -20,6 +20,7 @@ h1{
 .users{
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
 }
 
 .users:hover{

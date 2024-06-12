@@ -78,3 +78,17 @@ margin: .5rem;
 .section video{
 width: 100%;
 }
+
+
+
+
+@media screen and (max-width:850px) {
+
+    .section{
+        flex-direction: column;
+    }
+
+    .section .post{
+        width: 75%;
+    }
+}

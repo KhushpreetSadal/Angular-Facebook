@@ -79,3 +79,29 @@ margin: .5rem;
     margin: 0rem .5rem;
 
 }
+
+@media screen and (max-width:970px) {
+    
+   .section .post{
+        width: 75%;
+    }
+   .section .images{
+        width: 100%;
+    }
+   .section .images img{
+        width: 100%;
+    }
+    .section .images h3{
+        margin: 1.5rem;
+    }
+   
+.section .images .like img{
+    width: 7%;
+    margin: 0rem 1rem;
+}
+.section .images .like h3{
+    font-size: 2rem;
+    margin: 1rem 3rem;
+}
+    
+}

@@ -57,6 +57,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
     }
     .section1 .posts ul li{
         margin-right: 1rem;
@@ -71,3 +72,5 @@
         text-align: center;
     }
 }
+
+

@@ -99,3 +99,35 @@
     font-size: 1.2rem;
 
 }
+
+@media screen and (max-width:950px) {
+
+    .container{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .container #left{
+        width: 75%;
+        margin: 2rem auto;
+    }
+    .container #right{
+        width: 75%;
+        margin: 2rem auto;
+    }
+    .container #right .form{
+        width: 75%;
+      
+    }
+    .container #right .btn{
+        width: 75%;
+
+    }
+    .container #right .newacc{
+        width: 75%;
+    }
+
+    .container #left #text{
+        width: 80%;
+        margin: auto;
+    }
+}
