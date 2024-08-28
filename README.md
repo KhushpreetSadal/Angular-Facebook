@@ -1,6 +1,15 @@
 # Facebook
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2 
+This is a Facebook clone where we can upload images, videos, add friends etc 
+
+##To run this Project
+
+Angular Cli 18.0.3 and above should be installed, Nodejs v18.20.3 can be Installed and Json-Server must be installed. Clone this project and Run 'npm install' command to download all the dependencies of the project
+
+##To run Server
+
+use Command 'json-server --watch db.json'
 
 ## Development server
 
